@@ -8,12 +8,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0.8,maximum-scale=2.0,user-scalable=no">
-		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-		<script src="js/jquery.kxbdMarquee.js"></script>
-		<script type="text/javascript" src="js/jquery.movingboxes.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
-		
-		<style>
+        <style>
             html{
 			background: radial-gradient(black, transparent);
 			}
@@ -296,48 +291,44 @@
 		</footer>
 
 		
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="js/jquery.kxbdMarquee.js"></script>
+		<script type="text/javascript" src="js/jquery.movingboxes.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+		
+		<script  type="text/javascript">
+			var slideIndex = 0;
+			showSlides();
 
-		<script language="JavaScript">
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-			
+			function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 1500); // Change image every 2 seconds
+			}
 			
 			(function(){
 	$("#marquee1").kxbdMarquee({direction:"right"});
 	$("#marquee2").kxbdMarquee({isEqual:false});
 	$("#marquee3").kxbdMarquee({direction:"down"});
 	$("#marquee4").kxbdMarquee({direction:"up",isEqual:false});
-});
+})();
 
             var mySwiper = new Swiper('#rySwiper', {
                 pagination: '.swiper-pagination',
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
-                autoplay: 8000,
+                autoplay: 1000,
                 loop: true,
                 slidesPerView: 'auto',
                 centeredSlides: true,
