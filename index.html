@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 	<head>
 		<meta charset="UTF-8">
@@ -62,15 +62,15 @@
 					</div>
 
 					<div class="mySlides fade">
-					<img src="image/slide01_pic_02.png" style="width:100%">
+					<img src="image/slide01_pic_01.png" style="width:100%">
 					</div>
 
 					<div class="mySlides fade">
-					<img src="image/slide01_pic_03.png" style="width:100%">
+					<img src="image/slide01_pic_01.png" style="width:100%">
 					</div>
 
 					<div class="mySlides fade">
-					<img src="image/slide01_pic_04.png" style="width:100%">
+					<img src="image/slide01_pic_01.png" style="width:100%">
 					</div>
 
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -254,20 +254,17 @@ var slideIndex = 1;
     slides[slideIndex-1].style.display = "block"; 
     dots[slideIndex-1].className += " active"; 
 } 
-setInterval(plusSlides, 2000, 1); // call plusSlider, with 1 as parameter 
+setInterval(plusSlides, 2500, 1); // call plusSlider, with 1 as parameter 
 			
 			(function(){
-	$("#marquee1").kxbdMarquee({direction:"right"});
-	$("#marquee2").kxbdMarquee({isEqual:false});
-	$("#marquee3").kxbdMarquee({direction:"down"});
-	$("#marquee4").kxbdMarquee({direction:"up",isEqual:false});
-})();
+				$("#marquee2").kxbdMarquee({isEqual:false});
+			})();
 
             var mySwiper = new Swiper('#rySwiper', {
                 pagination: '.swiper-pagination',
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
-                autoplay: 1000,
+                autoplay: 2500,
                 loop: true,
                 slidesPerView: 'auto',
                 centeredSlides: true,
