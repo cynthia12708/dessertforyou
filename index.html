@@ -12,27 +12,6 @@
 		<script src="js/jquery.kxbdMarquee.js"></script>
 		<script type="text/javascript" src="js/jquery.movingboxes.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
-		<script>
-            var mySwiper = new Swiper('#rySwiper', {
-                pagination: '.swiper-pagination',
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
-                autoplay: 1000,
-                loop: true,
-                slidesPerView: 'auto',
-                centeredSlides: true,
-				slidesPerView : 5,
-            });
-            //鼠标移入停止轮播
-            $('#rySwiper').mouseenter(function() {
-                mySwiper.stopAutoplay();
-            });
-            //鼠标移出开启轮播
-            $('#rySwiper').mouseleave(function() {
-                mySwiper.startAutoplay();
-            });		
-		
-		</script>
 
         <style>
 
