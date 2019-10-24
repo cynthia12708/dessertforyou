@@ -7,8 +7,8 @@
 
 html {
 	margin: 0;
-	padding: 0;
-	min-width: 1175px;
+  padding: 0;
+  min-width: 1175px;
 }
 
 body {
@@ -22,14 +22,14 @@ body {
 }
 
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 header{
-	position: sticky;
-	top: 0;
-	width: 100%;
-	z-index: 99;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99;
 }
 
 .marq_header{
@@ -356,11 +356,16 @@ z-index: 16;
 main{
   width:100%;
   height: 1000px;
-  background: url(../image/bg_pic.png) repeat-x;
+  background: url(../image/bg_pic_1.jpg) repeat-x;
   /*background-size: cover;*/
   z-index: -1;
   top: 0;
   padding-top: 125px;
+  margin-top: -115px;
+}
+
+.main{
+	background: url(../image/bg_pic_2.jpg) repeat-x;
 }
 
 .slide01{
@@ -373,12 +378,21 @@ main{
 
 .slide02{
   position: absolute;
-  top: 700px;
+  top: 550px;
   left: -40px;
   background-color:#fff7b452;
   width:1270px;
   height: 275px;
   margin-left: calc((100% - 1230px) / 2);
+}
+
+.two_screen_sport{
+	background: url(../image/sport_bg02.png) no-repeat;
+	width:1076px;
+	height: 674px;
+	margin-left: calc((100% - 990px) / 2);
+	position: absolute;
+	margin-top: 90px;
 }
 
 .left_aside_pic{
@@ -584,11 +598,12 @@ height: 20px;
 }
 
 footer{
-  position:sticky;
+  /*position:sticky;*/
+  position:fixed;
   height:115px;
   width:100%;
   background-color:darkred;
-  bottom:-115px;
+  bottom: 0px;
 }
 
 .footer_block_1{
@@ -821,7 +836,7 @@ ul{
   to {opacity: 1}
 }
 
-/* 第二組輪播CSS */
+/*第二組輪播CSS*/
             .ry-content {
                 position: relative;
 				margin-top: -55px;
@@ -849,7 +864,7 @@ ul{
             }
 
             .ry-swiper .swiper-slide-active {
-                transform: scale(1.25);
+                transform: scale(1.1);
                 opacity: 1;
                 z-index: 90;
             }
@@ -886,10 +901,27 @@ ul{
             .ry-item dd {
                 margin-top: 22px;
             }
+
+
+
+
+
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1250px){
