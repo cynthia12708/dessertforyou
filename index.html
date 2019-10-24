@@ -139,11 +139,11 @@
 					</div>
 
 					<div class="mySlides fade">
-					<img src="image/slide01_pic_01.png" style="width:100%">
+					<img src="image/slide01_pic_03.png" style="width:100%">
 					</div>
 
 					<div class="mySlides fade">
-					<img src="image/slide01_pic_01.png" style="width:100%">
+					<img src="image/slide01_pic_04.png" style="width:100%">
 					</div>
 
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -297,9 +297,10 @@
 
 		
 
+		<script language="JavaScript">
 
-	
-	<script language="JavaScript">	
+			
+			
 			(function(){
 	$("#marquee1").kxbdMarquee({direction:"right"});
 	$("#marquee2").kxbdMarquee({isEqual:false});
@@ -311,7 +312,7 @@
                 pagination: '.swiper-pagination',
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
-                autoplay: 3000,
+                autoplay: 8000,
                 loop: true,
                 slidesPerView: 'auto',
                 centeredSlides: true,
@@ -325,38 +326,35 @@
             $('#rySwiper').mouseleave(function() {
                 mySwiper.startAutoplay();
             });
-		</script>
-		
-				<script language="JavaScript">
-var slideIndex = 1; 
-    showSlides(slideIndex); 
-
-    function plusSlides(n) { 
-    showSlides(slideIndex += n); 
-    } 
-    function currentSlide(n) { 
-    showSlides(slideIndex = n); 
-    } 
-    function showSlides(n) { 
-    var i; 
-    var slides = document.getElementsByClassName("mySlides"); 
-    var dots = document.getElementsByClassName("dot"); 
-    if (n > slides.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = slides.length} 
-    for (i = 0; i < slides.length; i++) { 
-     slides[i].style.display = "none"; 
-    } 
-    for (i = 0; i < dots.length; i++) { 
-     dots[i].className = dots[i].className.replace(" active", ""); 
-    } 
-    if (slideIndex> slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    dots[slideIndex-1].className += " active"; 
-} 
-setInterval(plusSlides, 2000, 1); // call plusSlider, with 1 as parameter 
-}
 			
-	</script>
+			
+			var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+		</script>
 	</body>
 	
 	
