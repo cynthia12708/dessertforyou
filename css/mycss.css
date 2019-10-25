@@ -794,6 +794,14 @@ footer{
   cursor:pointer;
 }
 
+.user_list_content:hover{
+	background: url(../image/all_pic.png) -32px -912px no-repeat;
+}
+
+.game_plat_content_1:hover{
+	background: url(../image/all_pic.png) -193px -914px no-repeat;
+}
+
 .game_plat_content_2{
   background: url(../image/all_pic.png) -290px -948px no-repeat;
   width: 120px;height: 32px;
@@ -802,6 +810,10 @@ footer{
   margin-top: 20px;
   margin-left: 20px;
   cursor:pointer;
+}
+
+.game_plat_content_2:hover{
+	background: url(../image/all_pic.png) -290px -918px no-repeat;
 }
 
 .game_plat_content_3{
@@ -815,6 +827,10 @@ footer{
   cursor:pointer;
 }
 
+.game_plat_content_3:hover{
+	background: url(../image/all_pic.png) -416px -916px no-repeat;
+}
+
 .game_plat_content_4{
   background: url(../image/all_pic.png) -540px -948px no-repeat;
   width: 120px;
@@ -826,6 +842,10 @@ footer{
   cursor:pointer;
 }
 
+.game_plat_content_4:hover{
+	background: url(../image/all_pic.png) -540px -914px no-repeat;
+}
+
 .game_plat_content_5{
   background: url(../image/all_pic.png) -660px -950px no-repeat;
   width: 120px;
@@ -835,6 +855,10 @@ footer{
   margin-top: 20px;
   margin-left: 0;
   cursor:pointer;
+}
+
+.game_plat_content_5:hover{
+	background: url(../image/all_pic.png) -660px -914px no-repeat;
 }
 
 /*跑馬燈JS*/
