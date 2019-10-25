@@ -387,12 +387,81 @@ main{
 }
 
 .tiger_screen{
-	background: url(../image/tiger_pic.png) no-repeat;
 	width: 983px;
 	height: 553px;
 	margin-left: calc((100% - 960px) / 2);
 	margin-top: 100px;
 	position: absolute;
+}
+
+.tiger_window_L{
+	width:227px;
+	height:261px;
+	background:url(../image/L_window.png);
+	position: absolute;
+}
+
+.tiger_window_R{
+	width:227px;
+	height:261px;
+	background:url(../image/R_window.png);
+	position: absolute;
+}
+
+.tiger_pic_out{
+	width:220px;
+	height:220px;
+	margin: 4px 0 0 4px;
+	overflow:hidden;
+}
+
+.tiger_pic_out>img{
+	transition:0.25s;
+	cursor:pointer;
+}
+
+.tiger_pic_out>img:hover{
+	transform:scale(1.1);
+}
+
+.tw_1{
+	left: 4px;
+	top: 4px;
+}
+
+.tw_2{
+	left: 255px;
+	top: 4px;
+}
+
+.tw_3{
+	left: 508px;
+	top: 4px;
+}
+
+.tw_4{
+	left: 760px;
+	top: 4px;
+}
+
+.tw_5{
+	left: 4px;
+	top: 296px;
+}
+
+.tw_6{
+	left: 256px;
+	top: 296px;
+}
+
+.tw_7{
+	left: 508px;
+	top: 296px;
+}
+
+.tw_8{
+	left: 760px;
+	top: 296px;
 }
 
 #tiger_01{
