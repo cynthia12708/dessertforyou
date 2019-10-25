@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/mycss.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0.8,maximum-scale=2.0,user-scalable=no">
+		
 		<style>
 
 		</style>
@@ -17,13 +18,13 @@
 				
 				<div class="marq_outbox">
 					<img src="image/horn.png">
-					<div id="marquee2">
-						<ul>
-							<li><a>⌾臨時維護通知⌾PNG 老虎機將於2019年07月24日 星期三 09:40~待定，進行臨時維護，完成時間待定，維護期間無法進行遊戲及轉點，造成不便敬請見諒！</a></li>
-							<li><a>小賭，養家餬口；大賭，發家致富。</a></li>
-							<li><a>賭賭賭！買買買！台灣發大財！</a></li>
-						</ul>
+					<div class="marquee">
+						<li>⌾臨時維護通知⌾PNG 老虎機將於2019年07月24日 星期三 09:40~待定，進行臨時維護</li>
+						<li>完成時間待定，維護期間無法進行遊戲及轉點，造成不便敬請見諒！</li>
+						<li>小賭，養家餬口；大賭，發家致富。</li>
+						<li>賭賭賭！買買買！台灣發大財！</li>
 					</div>
+					
 				</div>
 				<a class="forget_psw">忘記密碼？</a>
 				<div class="cell_input_box">
@@ -51,15 +52,15 @@
 		</header>
 		<main class="main">
 
-			<div class="tiger_screen" style="background: url(image/tiger_pic.png) no-repeat;width: 983px;height: 553px;margin-left: calc((100% - 960px) / 2);margin-top: 100px;position: absolute;">
-				<a style="display:block;width:219px;height:219px;background:url(image/tiger_pic_7.png);position: absolute;left: 4px;top: 4px;cursor:pointer;"></a>
-				<a style="display:block;width:219px;height:219px;background:url(image/tiger_pic_8.png);position: absolute;left: 255px;top: 4px;cursor:pointer;"></a>
-				<a style="display:block;width:219px;height:219px;background:url(image/tiger_pic_9.png);position: absolute;left: 508px;top: 4px;cursor:pointer;"></a>
-				<a style="display:block;width:219px;height:219px;background:url(image/tiger_pic_10.png);position: absolute;left: 760px;top: 4px;cursor:pointer;"></a>
-				<a style="display:block;width:219px;height:219px;background:url(image/tiger_pic_11.png);position: absolute;left: 4px;top: 296px;cursor:pointer;"></a>
-				<a style="display:block;width:219px;height:219px;background:url(image/tiger_pic_12.png);position: absolute;left: 256px;top: 296px;cursor:pointer;"></a>
-				<a style="display:block;width:219px;height:219px;background:url(image/tiger_pic_6.png);position: absolute;left: 508px;top: 296px;cursor:pointer;"></a>
-				<a style="display:block;width:219px;height:219px;background:url(image/tiger_pic_6.png);position: absolute;left: 760px;top: 296px;cursor:pointer;"></a>
+			<div class="tiger_screen">
+				<a id="tiger_01"></a>
+				<a id="tiger_02"></a>
+				<a id="tiger_03"></a>
+				<a id="tiger_04"></a>
+				<a id="tiger_05"></a>
+				<a id="tiger_06"></a>
+				<a id="tiger_07"></a>
+				<a id="tiger_08"></a>
 			</div>
 
 			<div class="left_aside_pic"></div>
@@ -134,19 +135,8 @@
 		</footer>
 
 
-		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-		<script src="js/jquery.kxbdMarquee.js"></script>
-		<script type="text/javascript" src="js/jquery.movingboxes.js"></script>
-
-		<script language="JavaScript">
-			
-			(function(){
-	$("#marquee1").kxbdMarquee({direction:"right"});
-	$("#marquee2").kxbdMarquee({isEqual:false});
-	$("#marquee3").kxbdMarquee({direction:"down"});
-	$("#marquee4").kxbdMarquee({direction:"up",isEqual:false});
-})();
-		</script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script><script src="js/jquery.kxbdMarquee.js"></script><script type="text/javascript" src="js/jquery.movingboxes.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js"></script><script language="JavaScript">
+$('.marquee').marquee({direction: 'left',duration: 15000,gap: 50,duplicated: false,startVisible: true});</script>
 	</body>
 	
 	

@@ -385,6 +385,103 @@ main{
   margin-left: calc((100% - 1230px) / 2);
 }
 
+.tiger_screen{
+	background: url(../image/tiger_pic.png) no-repeat;
+	width: 983px;
+	height: 553px;
+	margin-left: calc((100% - 960px) / 2);
+	margin-top: 100px;
+	position: absolute;
+}
+
+#tiger_01{
+	display:block;
+	width:219px;
+	height:219px;
+	background:url(../image/tiger_pic_7.png);
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	cursor:pointer;
+}
+
+#tiger_02{
+	display:block;
+	width:219px;
+	height:219px;
+	background:url(../image/tiger_pic_8.png);
+	position: absolute;
+	left: 255px;
+	top: 4px;
+	cursor:pointer;	
+}
+
+#tiger_03{
+	display:block;
+	width:219px;
+	height:219px;
+	background:url(../image/tiger_pic_9.png);
+	position: absolute;
+	left: 508px;
+	top: 4px;
+	cursor:pointer;
+}
+
+#tiger_04{
+	display:block;
+	width:219px;
+	height:219px;
+	background:url(../image/tiger_pic_10.png);
+	position: absolute;
+	left: 760px;
+	top: 4px;
+	cursor:pointer;
+}
+
+#tiger_05{
+	display:block;
+	width:219px;
+	height:219px;
+	background:url(../image/tiger_pic_11.png);
+	position: absolute;
+	left: 4px;
+	top: 296px;
+	cursor:pointer;
+}
+
+#tiger_06{
+	display:block;
+	width:219px;
+	height:219px;
+	background:url(../image/tiger_pic_12.png);
+	position: absolute;
+	left: 256px;
+	top: 296px;
+	cursor:pointer;
+}
+
+#tiger_07{
+	display:block;
+	width:219px;
+	height:219px;
+	background:url(../image/tiger_pic_6.png);
+	position: absolute;
+	left: 508px;
+	top: 296px;
+	cursor:pointer;
+}
+
+#tiger_08{
+	display:block;
+	width:219px;
+	height:219px;
+	background:url(../image/tiger_pic_6.png);
+	position: absolute;
+	left: 760px;
+	top: 296px;
+	cursor:pointer;
+}
+
 .two_screen_sport{
 	background: url(../image/sport_bg02.png) no-repeat;
 	width:1076px;
@@ -740,29 +837,26 @@ footer{
 }
 
 /*跑馬燈JS*/
-#marquee2{
-  width: calc(100% - 945px);
-  min-width: 250px;
-	height:38px;
-	overflow:hidden;
-	float:left;
-    margin-top:25px;
-	color:#7f7d80;
-	position: absolute;
-    top: -11px;
-    left: 345px;
+
+.marquee {
+  width: calc(100% - 50px);
+  overflow: hidden;
+  color:#b5b5b5;
+  margin-left: 40px;
+  margin-top: 5px;
 }
-#marquee2 ul li{
-	float:left;
-	padding:0 20px;
-	line-height:25px;
-}
-#marquee2 ul li a{
-	text-decoration:none;
-}
-ul{
+
+.marquee li {
 	list-style:none;
+	float:left;
+	margin:0 20px;
 }
+
+
+
+
+
+
 
 /* Slideshow container */
 .slideshow-container {

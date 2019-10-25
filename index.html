@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 
 	<head>
@@ -14,15 +14,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js"></script>
 		
 		<style>
-
-.marquee {
-  width: calc(100% - 50px);
-  overflow: hidden;
-  color:#fff;
-  margin-left: 40px;
-  margin-top: 5px;
-}
-
         </style>
 	</head>
 	<body>
@@ -30,29 +21,13 @@
 			<div class="marq_header">
 				
 				<div class="marq_outbox">
-					<img src="image/horn.png">
-					<!---
-					<div id="marquee2">
-						<ul>
-							<li><a>⌾臨時維護通知⌾PNG 老虎機將於2019年07月24日 星期三 09:40~待定，進行臨時維護，完成時間待定，維護期間無法進行遊戲及轉點，造成不便敬請見諒！</a></li>
-							<li><a>小賭，養家餬口；大賭，發家致富。</a></li>
-							<li><a>賭賭賭！買買買！台灣發大財！</a></li>
-						</ul>
-					</div>
-					--->
-					
-					
+					<img src="image/horn.png">	
 					<div class="marquee">
-						<li style="list-style:none;float:left;margin:0 20px;">⌾臨時維護通知⌾PNG 老虎機將於2019年07月24日 星期三 09:40~待定，進行臨時維護</li>
-
-						<li style="list-style:none;float:left;margin:0 20px;">完成時間待定，維護期間無法進行遊戲及轉點，造成不便敬請見諒！</li>
-						
-						<li style="list-style:none;float:left;margin:0 20px;">小賭，養家餬口；大賭，發家致富。</li>
-						
-						<li style="list-style:none;float:left;margin:0 20px;">賭賭賭！買買買！台灣發大財！</li>
+						<li>⌾臨時維護通知⌾PNG 老虎機將於2019年07月24日 星期三 09:40~待定，進行臨時維護</li>
+						<li>完成時間待定，維護期間無法進行遊戲及轉點，造成不便敬請見諒！</li>
+						<li>小賭，養家餬口；大賭，發家致富。</li>
+						<li>賭賭賭！買買買！台灣發大財！</li>
 					</div>
-					
-					
 					
 				</div>
 				<a class="forget_psw">忘記密碼？</a>
@@ -259,20 +234,11 @@
 			
 
 
-$('.marquee').marquee({
-        direction: 'left',      //方向（默認爲left，下同）
-        duration: 15000,         //滾動時長（單位：毫秒）
-        gap: 50,                //滾動一個週期的間距（單位：px）
-        // delayBeforeStart: 500, //滾動開始延遲時間（單位：毫秒）
-        duplicated: false,      //無縫銜接
-        startVisible: true      //初始位置設置
-    });//jquery marquee的使用
-
-            var mySwiper = new Swiper('#rySwiper', {
-                pagination: '.swiper-pagination',
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
-                autoplay: 3500,
+$('.marquee').marquee({direction: 'left',duration: 15000,gap: 50,duplicated: false,startVisible: true });var mySwiper = new Swiper('#rySwiper', {
+pagination: '.swiper-pagination',
+nextButton: '.swiper-button-next',
+prevButton: '.swiper-button-prev',
+autoplay: 3500,
                 loop: true,
                 slidesPerView: 'auto',
                 centeredSlides: true,
