@@ -355,7 +355,8 @@ z-index: 16;
 */
 main{
   width:100%;
-  height: 1000px;
+  height: calc(100vh - 85px);
+  min-height: 840px;
   background: url(../image/bg_pic_1.jpg) repeat-x;
   /*background-size: cover;*/
   z-index: -1;
@@ -503,7 +504,7 @@ main{
 }
 
 .left_aside_pic:hover{
-  transform:scale(1.2);
+  transform:scale(1.1);
 }
 
 #R_aside_btn_1{
@@ -513,7 +514,7 @@ main{
   border-radius:20px;
   outline:none;
   position:fixed;
-  right:-30px;
+  right:-110px;
   top:200px;
   font-size:18px;
   color:#3c0a02;
@@ -521,11 +522,11 @@ main{
   font-weight:bolder;
   background-image:linear-gradient(to bottom,#e4cea4,#e4cea4,#fdf1d8,#e4cea4,#e4cea4);
   border: none;
-  transition: 0.25s;
+  transition: 0.35s;
 }
 
 #R_aside_btn_1:hover{
-  transform: scale(1.05);
+  right:-30px;
 }
 
 #btn_1{
@@ -545,7 +546,7 @@ main{
   border-radius:20px;
   outline:none;
   position:fixed;
-  right:-30px;
+  right:-110px;
   top:250px;
   font-size:18px;
   color:#3c0a02;
@@ -553,11 +554,11 @@ main{
   font-weight:bolder;
   background-image:linear-gradient(to bottom,#e4cea4,#e4cea4,#fdf1d8,#e4cea4,#e4cea4);
   border: none;
-  transition: 0.25s;
+  transition: 0.35s;
 }
 
 #R_aside_btn_2:hover{
-  transform: scale(1.05);
+  right:-30px;
 }
 
 #btn_2{
@@ -577,7 +578,7 @@ main{
   border-radius:20px;
   outline:none;
   position:fixed;
-  right:-30px;
+  right:-110px;
   top:300px;
   font-size:18px;
   background-image:linear-gradient(to bottom,#eed022,#d99e35);
@@ -585,11 +586,11 @@ main{
   color:#3c0a02;
   font-family:'微軟正黑體';
   font-weight:bolder;
-  transition: 0.25s;
+  transition: 0.35s;
 }
 
 #R_aside_btn_3:hover{
-  transform: scale(1.05);
+  right:-30px;
 }
 
 #btn_3{
@@ -608,7 +609,7 @@ main{
   border-radius:20px;
   outline:none;
   position:fixed;
-  right:-30px;
+  right:-110px;
   top:350px;
   font-size:18px;
   background-image:linear-gradient(to bottom,#eed022,#d99e35);
@@ -616,20 +617,20 @@ main{
   color:#3c0a02;
   font-family:'微軟正黑體';
   font-weight:bolder;
-  transition: 0.25s;
+  transition: 0.35s;
 }
 
 #R_aside_btn_4:hover{
-  transform: scale(1.05);
+  right:-30px;
 }
 
 #btn_4{
-background: url(../image/all_pic.png) -210px -880px no-repeat;
-display: block;
-margin: 4px -25px 0 7px;
-float: left;
-width: 20px;
-height: 20px;
+	background: url(../image/all_pic.png) -210px -880px no-repeat;
+	display: block;
+	margin: 4px -25px 0 7px;
+	float: left;
+	width: 20px;
+	height: 20px;
 }
 
 #R_aside_btn_5{
@@ -639,7 +640,7 @@ height: 20px;
   border-radius:20px;
   outline:none;
   position:fixed;
-  right:-30px;
+  right:-110px;
   top:400px;
   font-size:18px;
   background-image:linear-gradient(to bottom,#eed022,#d99e35);
@@ -647,10 +648,10 @@ height: 20px;
   color:#3c0a02;
   font-family:'微軟正黑體';
   font-weight:bolder;
-  transition: 0.25s;
+  transition: 0.35s;
 }
 #R_aside_btn_5:hover{
-  transform: scale(1.05);
+  right:-30px;
 }
 
 #btn_5{
@@ -669,7 +670,7 @@ height: 20px;
   border-radius:20px;
   outline:none;
   position:fixed;
-  right:-30px;
+  right:-110px;
   top:450px;
   font-size:18px;
   background-image:linear-gradient(to bottom,#eed022,#d99e35);
@@ -677,11 +678,11 @@ height: 20px;
   color:#3c0a02;
   font-family:'微軟正黑體';
   font-weight:bolder;
-  transition: 0.25s;
+  transition: 0.35s;
 }
 
 #R_aside_btn_6:hover{
-  transform: scale(1.05);
+  right:-30px;
 }
 
 #btn_6{
@@ -694,8 +695,8 @@ height: 20px;
 }
 
 footer{
-  /*position:sticky;*/
-  position:fixed;
+  /*position:sticky;
+  position:fixed;*/
   height:115px;
   width:100%;
   background-color:darkred;
