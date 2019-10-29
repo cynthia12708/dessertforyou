@@ -369,6 +369,10 @@ main{
 	background: url(../image/bg_pic_2.jpg) repeat-x;
 }
 
+.main03{
+	background: url(../image/bg_pic_3.jpg) repeat-x;
+}
+
 .slide01{
   width:1300px;
   padding:20px 0 0 0;
@@ -553,12 +557,40 @@ main{
 }
 
 .two_screen_sport{
-	background: url(../image/sport_bg02.png) no-repeat;
+	background: url(../image/sport_bg.png) no-repeat;
 	width:1076px;
 	height: 674px;
 	margin-left: calc((100% - 990px) / 2);
 	position: absolute;
 	margin-top: 90px;
+}
+
+.sport_pic_out{
+	width:320px;
+	height:433px;
+	background:#00634a;
+	position:absolute;
+	overflow:hidden;
+	padding-left: 1.5px;
+}
+
+.sport_pic_out>img{
+	transition:0.35s;
+	cursor:pointer;
+}
+
+.sport_pic_out>img:hover{
+	transform:scale(1.05);
+}
+
+.sw_1{
+	top:5px;
+	left:172px;
+}
+
+.sw_2{
+	top:5px;
+	left:584px;
 }
 
 .left_aside_pic{
@@ -719,6 +751,12 @@ main{
   font-weight:bolder;
   transition: 0.35s;
 }
+
+#R_aside_btn_5 a{
+	color: #3c0a02 !important;
+	text-decoration:none  !important;
+}
+
 #R_aside_btn_5:hover{
   right:-30px;
 }
@@ -776,6 +814,7 @@ footer{
   height:40px;
   width:100%;
   background-color:#240225;
+  position:sticky;
 }
 
 .down_nav{
@@ -853,7 +892,7 @@ footer{
 }
 
 .game_plat_content_1{
-  background: url(../image/all_pic.png) -193px -948px no-repeat;
+  background: url(../image/all_pic_02.png) -193px -948px no-repeat;
   width: 75px;
   height: 32px;
   display: block;
@@ -864,15 +903,15 @@ footer{
 }
 
 .user_list_content:hover{
-	background: url(../image/all_pic.png) -32px -912px no-repeat;
+	background: url(../image/all_pic_02.png) -32px -912px no-repeat;
 }
 
 .game_plat_content_1:hover{
-	background: url(../image/all_pic.png) -193px -914px no-repeat;
+	background: url(../image/all_pic_02.png) -193px -914px no-repeat;
 }
 
 .game_plat_content_2{
-  background: url(../image/all_pic.png) -290px -948px no-repeat;
+  background: url(../image/all_pic_02.png) -290px -948px no-repeat;
   width: 120px;height: 32px;
   display: block;
   float: left;
@@ -882,11 +921,11 @@ footer{
 }
 
 .game_plat_content_2:hover{
-	background: url(../image/all_pic.png) -290px -918px no-repeat;
+	background: url(../image/all_pic_02.png) -290px -918px no-repeat;
 }
 
 .game_plat_content_3{
-  background: url(../image/all_pic.png) -415px -948px no-repeat;
+  background: url(../image/all_pic_02.png) -415px -948px no-repeat;
   width: 120px;
   height: 32px;
   display: block;
@@ -897,11 +936,11 @@ footer{
 }
 
 .game_plat_content_3:hover{
-	background: url(../image/all_pic.png) -416px -916px no-repeat;
+	background: url(../image/all_pic_02.png) -416px -916px no-repeat;
 }
 
 .game_plat_content_4{
-  background: url(../image/all_pic.png) -540px -948px no-repeat;
+  background: url(../image/all_pic_02.png) -540px -948px no-repeat;
   width: 120px;
   height: 32px;
   display: block;
@@ -912,11 +951,11 @@ footer{
 }
 
 .game_plat_content_4:hover{
-	background: url(../image/all_pic.png) -540px -914px no-repeat;
+	background: url(../image/all_pic_02.png) -540px -914px no-repeat;
 }
 
 .game_plat_content_5{
-  background: url(../image/all_pic.png) -660px -950px no-repeat;
+  background: url(../image/all_pic_02.png) -660px -950px no-repeat;
   width: 120px;
   height: 32px;
   display: block;
@@ -927,7 +966,7 @@ footer{
 }
 
 .game_plat_content_5:hover{
-	background: url(../image/all_pic.png) -660px -914px no-repeat;
+	background: url(../image/all_pic_02.png) -660px -914px no-repeat;
 }
 
 /*跑馬燈JS*/
@@ -938,7 +977,6 @@ footer{
   color:#b5b5b5;
   margin-left: 40px;
   margin-top: 5px;
-  height: 20px;
 }
 
 .marquee li {
@@ -947,9 +985,36 @@ footer{
 	margin:0 20px;
 }
 
+		  #dialog{
+	background:url(../image/jump_W.png) no-repeat;
+  }
+  
 
+.ui-dialog {
+    z-index:1000000000;
+    left: 50% !important; top: 50% !important;
+    transform:translateY(-50%) translateX(-50%) !important;
+    position: fixed !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: 760px !important;
+    height: 705px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.ui-dialog .ui-dialog-content {
+    flex: 1;
+}
+.ui-dialog .ui-dialog-buttonpane {
+    background:white;
+}
 
+#dialog{
+	background:url(../image/jump_W.png) no-repeat;
+}
 
+/* http://jsfiddle.net/iausallc/y7ja52dq/1/ */
 
 
 
