@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<title>遊戲平台 首頁</title>   
 		<link rel="stylesheet" href="css/mycss.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0.8,maximum-scale=2.0,user-scalable=no">
@@ -60,7 +61,7 @@
 		</header>
 		<main>
 			
-			<div class="slide01">
+			<div class="slide01 wow fadeInDown" data-wow-duration="1.5s">
 				<img src="image/slide_bg.png" style="width: 90%;">
 							
 					<div class="slideshow-container">
@@ -232,7 +233,7 @@
 		</footer>
 
 		
-
+		<script src="js/wow.js"></script>
 		<script language="JavaScript">
 
 			
@@ -311,6 +312,25 @@ setInterval(plusSlides, 3500, 1); // call plusSlider, with 1 as parameter
       $( "#dialog" ).dialog( "open" );
     });
   });
+  
+  
+  
+  
+      wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
 		</script>
 	</body>
 	

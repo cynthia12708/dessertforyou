@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<title>遊戲平台 老虎機</title>   
 		<link rel="stylesheet" href="css/mycss.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0.8,maximum-scale=2.0,user-scalable=no">
 		<style>
@@ -52,49 +53,49 @@
 
 			<div class="tiger_screen">
 				<div class="tiger_window_L tw_1">
-					<div class="tiger_pic_out">
+					<div class="tiger_pic_out  wow fadeInDown">
 						<img src="image/tiger_pic_1.png">
 					</div>
 				</div>
 				
 				<div class="tiger_window_L tw_2">
-					<div class="tiger_pic_out">
+					<div class="tiger_pic_out  wow fadeInDown">
 						<img src="image/tiger_pic_2.png">
 					</div>
 				</div>
 				
 				<div class="tiger_window_R tw_3">
-					<div class="tiger_pic_out">
+					<div class="tiger_pic_out  wow fadeInDown">
 						<img src="image/tiger_pic_3.png">
 					</div>
 				</div>
 				
 				<div class="tiger_window_R tw_4">
-					<div class="tiger_pic_out">
+					<div class="tiger_pic_out  wow fadeInDown">
 						<img src="image/tiger_pic_4.png">
 					</div>				
 				</div>
 				
 				<div class="tiger_window_L tw_5">
-					<div class="tiger_pic_out">
+					<div class="tiger_pic_out  wow fadeInDown">
 						<img src="image/tiger_pic_5.png">
 					</div>				
 				</div>
 				
 				<div class="tiger_window_L tw_6">
-					<div class="tiger_pic_out">
+					<div class="tiger_pic_out  wow slideInRight" data-wow-delay="0.5s">
 						<img src="image/tiger_pic_6.png">
 					</div>		
 				</div>
 				
 				<div class="tiger_window_R tw_7">
-					<div class="tiger_pic_out">
+					<div class="tiger_pic_out  wow slideInRight" data-wow-delay="0.5s">
 						<img src="image/tiger_pic_6.png">
 					</div>
 				</div>
 				
 				<div class="tiger_window_R tw_8">
-					<div class="tiger_pic_out">
+					<div class="tiger_pic_out  wow slideInRight" data-wow-delay="0.5s">
 						<img src="image/tiger_pic_6.png">
 					</div>
 				</div>
@@ -171,8 +172,33 @@
 			</div>
 		</footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script><script src="js/jquery.kxbdMarquee.js"></script><script type="text/javascript" src="js/jquery.movingboxes.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js"></script><script language="JavaScript">
-$('.marquee').marquee({direction: 'left',duration: 15000,gap: 50,duplicated: false,startVisible: true});</script>
+		<script src="js/wow.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="js/jquery.kxbdMarquee.js"></script>
+		<script type="text/javascript" src="js/jquery.movingboxes.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js"></script>
+		<script language="JavaScript">
+
+			$('.marquee').marquee({direction: 'left',duration: 15000,gap: 50,duplicated: false,startVisible: true});
+
+			wow = new WOW(
+			  {
+				animateClass: 'animated',
+				offset:       100,
+				callback:     function(box) {
+				  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+				}
+			  }
+			);
+			wow.init();
+			document.getElementById('moar').onclick = function() {
+			  var section = document.createElement('section');
+			  section.className = 'section--purple wow fadeInDown';
+			  this.parentNode.insertBefore(section, this);
+			};
+
+
+		</script>
 	</body>
 	
 	
