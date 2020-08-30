@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>普大首頁</title> 
+		<title>與我們聯絡</title> 
 		<link rel="stylesheet" href="css/flickity.css">  
 		<link rel="stylesheet" href="css/mycss.css">
 		<link rel="stylesheet" href="css/pushbar.css">
@@ -28,8 +28,8 @@
 						<li><a href="staff.html">員工園地</a></li>
 					</ul>
 				</div>
-<!--- 待修整 --->				
-<!---  						
+<!--- 待修整 --->
+<!---			
 				<div class="list01">
 					<div></div>
 					<a id="list01_menu01">主要產品</a>
@@ -41,9 +41,8 @@
 					<div></div>
 					<a id="list02_menu01">員工福利</a>
 					<a id="list02_menu02">銷售服務網</a>
-				</div>			
- --->				
-				
+				</div>
+--->
 				
 				<div class="btn_box">
 					<div class="input_box">
@@ -75,21 +74,25 @@
 			</div>
 			
 		</header>
+		
+		
+		
 				
 		<div class="rectangle01"></div>
 		
 		<div class="rectangle02"></div>
-<!--- 待修整 --->
-
-<!--- 	
-		<div class="center_text">
-			<img src="image/logo02.png">
-		</div>
 		
-		<div class="center_text2">
-			<img src="image/logo03.png">
+		<div class="rectangle03"></div>
+		
+		<div class="slide_nav_text">
+			<a class="culturetext">公司簡介</a>
+				</br>
+			<a class="culturetext_en">Company Introduction</a>
 		</div>
---->			
+
+
+
+		
 		<div data-pushbar-id="mypushbar1" class="pushbar from_right">
 			
 			<button data-pushbar-close>╳</button>
@@ -116,7 +119,6 @@
 				<div class="cell_navbar" onclick="location.href='staff.html';">
 					<a>員公園地</a>
 				</div>
-				
 				<div class="cell_findbox">
 					<input type="text" value="找什麼" id="find_what">
 				
@@ -126,27 +128,69 @@
 			</div>
 		</div>
 		
-		<main>
-			<div class="sliderblock">
-
-				
-				
-				
-				<div class="carousel" data-flickity='{ "wrapAround": true }'>
-					<div class="carousel-cell" id="slide_pic1"></div>
-					<div class="carousel-cell" id="slide_pic2"></div>
-					<div class="carousel-cell" id="slide_pic3"></div>
-					<div class="carousel-cell" id="slide_pic4"></div>
-					<div class="carousel-cell" id="slide_pic5"></div>
+		
+		
+		
+		<div class="connect_center">
+			<div class="contect_center">
+				<div class="center_L">
+					<a style="display:block;z-index:3;position:absolute;top:70px;left:170px;font-size:37px;font-family:'微軟正黑體';color:#fff;font-weight:bolder;font-style:italic;">歡迎蒞臨本網站</a>
+					<span style="display:block;z-index:3;position:absolute;top:130px;left:170px;font-size:21px;font-family:'微軟正黑體';color:#fff;font-weight:bolder;font-style:italic;">
+					如果有任何疑問請於本留言板留下您的訊息
+					</br>
+					我們會儘快為您服務，謝謝你！
+					</span>
+					<img src="image/centerpic.png">
 				</div>
+				<div class="center_R">
 				
-				
-				
-				
-				
-				
+					<div class="input_center">
+						<div class="input_L_box">
+
+							<a>•&ensp;公司名稱</a><input type="text" id="input_cen_1"><br/>
+							<a>•&ensp;公司電話</a><input type="text" id="input_cen_2"><br/>
+							<a>&emsp;傳&emsp;&emsp;真</a><input type="text" id="input_cen_3"><br/>
+							<a>&emsp;地&emsp;&emsp;址</a><input type="text" id="input_cen_4"><br/>
+							<a>•&ensp;聯絡人姓名</a><input type="text" id="input_cen_5"><br/>
+							<a>&emsp;聯絡人職稱</a><input type="text" id="input_cen_6"><br/>
+							<a>•&ensp;電子郵件</a><input type="text" id="input_cen_7"><br/>
+						
+						</div>
+						<div class="input_R_box">
+							<a>留言主旨</a><input type="text" id="input_cen_8"><br/><br/>
+							<a>留言內容</a><br/>
+							<textarea></textarea><br/>
+							<button id="button_cen_9">重新填寫</button>
+							<button id="button_cen_10">送出留言</button>
+						</div>
+					</div>
+
+					<img src="image/connect_R_bg.png" style="display:block;z-index:1;position:absolute;width:100%;height:540px;">
+					
+				</div>
 			</div>
-		</main>
+		</div>
+		<section class="sec_02">
+			<div style="margin:0 auto;padding-top:25px;padding-bottom:25px;text-align:center;">
+				<a class="cell_sec_a">公&ensp;司&ensp;名&ensp;稱</a></br><input type="text" id="cell_connect_01"><br/>
+				<a class="cell_sec_a">公&ensp;司&ensp;電&ensp;話</a></br><input type="text" id="cell_connect_02"><br/>
+				<a class="cell_sec_a">傳&emsp;&emsp;真</a></br><input type="text" id="cell_connect_03"><br/>
+				<a class="cell_sec_a">地&emsp;&emsp;址</a></br><input type="text" id="cell_connect_04"><br/>
+				<a class="cell_sec_a">聯絡人姓名</a></br><input type="text" id="cell_connect_05"><br/>
+				<a class="cell_sec_a">聯絡人職稱</a></br><input type="text" id="cell_connect_06"><br/>
+				<a class="cell_sec_a">電&ensp;子&ensp;郵&ensp;件</a></br><input type="text" id="cell_connect_07"><br/>
+				<a class="cell_sec_a">留&ensp;言&ensp;主&ensp;旨</a></br><input type="text" id="cell_connect_08"><br/><br/>
+				<a class="cell_sec_a">留&ensp;言&ensp;內&ensp;容</a></br>
+				<textarea style="width:300px;height:300px;margin-top:10px;margin-bottom:50px;border-radius:25px;resize:none;outline:none;"></textarea></br>
+				<button id="cell_btn_center">重新填寫</button>
+				<button id="cell_btn_center">送出留言</button>
+			</div>
+		</section>
+		
+		
+		
+		
+		
 		<footer>
 			<div class="corp_text">
 				<span>普大應用材料股份有限公司　PONY LEATHER CORPORATION</span>
@@ -183,7 +227,7 @@
 			</div>
 		</footer>	
 
-		
+
 		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="js/flickity.pkgd.js"></script>
 		<script src="js/pushbar.js"></script>
@@ -193,6 +237,7 @@
 				overlay:true,
 			});
 			
+	
 $(function(){ 
 $("#about_list,.list01").mouseover(function(){ 
 $(".list01").css("display", "block");
@@ -211,8 +256,9 @@ $("#list_introduce,.list02").mouseout(function(){
 $(".list02").css("display", "none");
 });
  
-}) 			
-	
+}) 					
+			
+			
 			
 		</script>
 	</body>

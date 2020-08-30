@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>普大首頁</title> 
+		<title>公司簡介</title> 
 		<link rel="stylesheet" href="css/flickity.css">  
 		<link rel="stylesheet" href="css/mycss.css">
 		<link rel="stylesheet" href="css/pushbar.css">
@@ -28,8 +28,9 @@
 						<li><a href="staff.html">員工園地</a></li>
 					</ul>
 				</div>
-<!--- 待修整 --->				
-<!---  						
+				
+<!--- 待修整 --->
+<!---				
 				<div class="list01">
 					<div></div>
 					<a id="list01_menu01">主要產品</a>
@@ -41,8 +42,9 @@
 					<div></div>
 					<a id="list02_menu01">員工福利</a>
 					<a id="list02_menu02">銷售服務網</a>
-				</div>			
- --->				
+				</div>
+				
+--->				
 				
 				
 				<div class="btn_box">
@@ -75,25 +77,30 @@
 			</div>
 			
 		</header>
+		
+		
+		
 				
 		<div class="rectangle01"></div>
 		
 		<div class="rectangle02"></div>
-<!--- 待修整 --->
-
-<!--- 	
-		<div class="center_text">
-			<img src="image/logo02.png">
-		</div>
 		
-		<div class="center_text2">
-			<img src="image/logo03.png">
+		<div class="rectangle03"></div>
+		
+		<div class="slide_nav_text">
+			<a class="culturetext">公司簡介</a>
+				</br>
+			<a class="culturetext_en">Company Introduction</a>
 		</div>
---->			
+
+
+
+		
 		<div data-pushbar-id="mypushbar1" class="pushbar from_right">
 			
 			<button data-pushbar-close>╳</button>
 			<div class="test_text">
+				
 				
 				<div class="cell_navbar" onclick="location.href='culture.html';">
 					<a>企業文化</a>
@@ -117,7 +124,7 @@
 					<a>員公園地</a>
 				</div>
 				
-				<div class="cell_findbox">
+				
 					<input type="text" value="找什麼" id="find_what">
 				
 					<input type="button" value="搜尋" id="find_dot">
@@ -126,27 +133,52 @@
 			</div>
 		</div>
 		
-		<main>
-			<div class="sliderblock">
+		
+		
+		
 
+		<div class="introduce_center">	
+			<div class="introdce_text_box">
 				
-				
-				
-				<div class="carousel" data-flickity='{ "wrapAround": true }'>
-					<div class="carousel-cell" id="slide_pic1"></div>
-					<div class="carousel-cell" id="slide_pic2"></div>
-					<div class="carousel-cell" id="slide_pic3"></div>
-					<div class="carousel-cell" id="slide_pic4"></div>
-					<div class="carousel-cell" id="slide_pic5"></div>
+				<div class="intro_L_text">
+					<a class="intro_a_01">專業的運動及休閒供應商</a>
+					</br>
+					<a class="intro_a_02">誠信、務實、創新、回饋</a>
+					</br></br>
+					<a class="intro_a_03_1">普大應用材料股份有限公司經營團隊成立於1980年，主要生產PU合成皮與真皮貼合，經營團隊成員具有</br>三十多年皮革與合成皮產業經驗。
+					</br></br>
+					本公司以嚴格的製程管控提供高品質產品，並</br>持續強化研發能力，為客戶快速開發多樣化</br>最新產品，創造顧客市場價值，獲得高滿</br>意度之肯定，奠定普大應用材料公司在</br>業界之專業地位。
+					</a>
 				</div>
 				
 				
-				
-				
-				
-				
+				<div class="intro_R_text">
+					<a class="intro_a_01">我們的歷史</a>
+					</br>
+					<a class="intro_a_02">History</a>
+					</br></br>
+					<a class="intro_a_03_2">
+					1980年 成立。
+					</br>
+					1984年 設立DMF回收設備。         
+					</br>       
+					1997年 3月通過經濟部標準局ISO 9002系統認證。
+					</br>
+					2000年 資本額為新台幣3.99億元。
+					</br>                                      
+					2003年 5月份通過經濟部標準局ISO 9001：2000年版系統認證。
+					</br>                                     
+					2011年 通過ISO 14001認證。
+					</a>
+				</div>
 			</div>
-		</main>
+		</div>
+
+		
+		
+		
+		
+		
 		<footer>
 			<div class="corp_text">
 				<span>普大應用材料股份有限公司　PONY LEATHER CORPORATION</span>
@@ -182,7 +214,7 @@
 				</div>
 			</div>
 		</footer>	
-
+		
 		
 		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="js/flickity.pkgd.js"></script>
@@ -193,6 +225,8 @@
 				overlay:true,
 			});
 			
+	
+	
 $(function(){ 
 $("#about_list,.list01").mouseover(function(){ 
 $(".list01").css("display", "block");
@@ -212,7 +246,7 @@ $(".list02").css("display", "none");
 });
  
 }) 			
-	
+			
 			
 		</script>
 	</body>

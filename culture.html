@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>普大首頁</title> 
+		<title>企業文化</title> 
 		<link rel="stylesheet" href="css/flickity.css">  
 		<link rel="stylesheet" href="css/mycss.css">
 		<link rel="stylesheet" href="css/pushbar.css">
@@ -28,8 +28,10 @@
 						<li><a href="staff.html">員工園地</a></li>
 					</ul>
 				</div>
-<!--- 待修整 --->				
-<!---  						
+
+
+<!--- 待修整 --->
+<!---	
 				<div class="list01">
 					<div></div>
 					<a id="list01_menu01">主要產品</a>
@@ -41,10 +43,8 @@
 					<div></div>
 					<a id="list02_menu01">員工福利</a>
 					<a id="list02_menu02">銷售服務網</a>
-				</div>			
- --->				
-				
-				
+				</div>
+--->	
 				<div class="btn_box">
 					<div class="input_box">
 						<input class="input_1" type="text" placeholder="請輸入帳號">
@@ -75,25 +75,30 @@
 			</div>
 			
 		</header>
+		
+		
+		
 				
 		<div class="rectangle01"></div>
 		
 		<div class="rectangle02"></div>
-<!--- 待修整 --->
-
-<!--- 	
-		<div class="center_text">
-			<img src="image/logo02.png">
-		</div>
 		
-		<div class="center_text2">
-			<img src="image/logo03.png">
+		<div class="rectangle03"></div>
+		
+		<div class="slide_nav_text">
+			<a class="culturetext">企業文化</a>
+				</br>
+			<a class="culturetext_en">Corporation Culture</a>
 		</div>
---->			
+
+
+
+		
 		<div data-pushbar-id="mypushbar1" class="pushbar from_right">
 			
 			<button data-pushbar-close>╳</button>
 			<div class="test_text">
+				
 				
 				<div class="cell_navbar" onclick="location.href='culture.html';">
 					<a>企業文化</a>
@@ -126,27 +131,22 @@
 			</div>
 		</div>
 		
-		<main>
-			<div class="sliderblock">
-
-				
-				
-				
-				<div class="carousel" data-flickity='{ "wrapAround": true }'>
-					<div class="carousel-cell" id="slide_pic1"></div>
-					<div class="carousel-cell" id="slide_pic2"></div>
-					<div class="carousel-cell" id="slide_pic3"></div>
-					<div class="carousel-cell" id="slide_pic4"></div>
-					<div class="carousel-cell" id="slide_pic5"></div>
-				</div>
-				
-				
-				
-				
-				
-				
+		
+		
+		
+		<section class="sec_01">
+			<div class="culture_center">	
+				<img src="image/pic_1.png">
+				<img src="image/pic_2.png">
+				<img src="image/pic_3.png">
+				<img src="image/pic_4.png">
 			</div>
-		</main>
+		</section>
+		
+		
+		
+		
+		
 		<footer>
 			<div class="corp_text">
 				<span>普大應用材料股份有限公司　PONY LEATHER CORPORATION</span>
@@ -183,7 +183,7 @@
 			</div>
 		</footer>	
 
-		
+
 		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="js/flickity.pkgd.js"></script>
 		<script src="js/pushbar.js"></script>
@@ -193,6 +193,7 @@
 				overlay:true,
 			});
 			
+	
 $(function(){ 
 $("#about_list,.list01").mouseover(function(){ 
 $(".list01").css("display", "block");
@@ -211,8 +212,9 @@ $("#list_introduce,.list02").mouseout(function(){
 $(".list02").css("display", "none");
 });
  
-}) 			
-	
+}) 		
+			
+			
 			
 		</script>
 	</body>
